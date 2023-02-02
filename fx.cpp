@@ -1,5 +1,4 @@
 #include <iostream>
-#include <windows.h>
 #include <string>
 #include "fx.h"
 
@@ -158,7 +157,7 @@ namespace std {
     }
 
     void fx::input_fx(void) {
-        SetConsoleOutputCP(1251);
+        system("chcp 1251");
         cout << "Ââåä³òü ôóíêö³þ f(x): ";
         cin >> fx_str;
     }
