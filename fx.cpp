@@ -51,7 +51,7 @@ namespace std {
             buffer.push_back(fx_str[i]);
         *n = stoi(buffer);
         if (*n == -1)
-            return "Сталася помилка!\nСтепінь не може доорівнювати -1.";
+            return "РЎС‚Р°Р»Р°СЃСЏ РїРѕРјРёР»РєР°!\nРЎС‚РµРїС–РЅСЊ РЅРµ РјРѕР¶Рµ РґРѕРѕСЂС–РІРЅСЋРІР°С‚Рё -1.";
         else {
             *n += 1;
             buffer = "";
@@ -105,7 +105,7 @@ namespace std {
             return p_Check(buffer.append(to_string(*x)));
         }
         if (fx_str.find('^') != string::npos)
-            return "Программа не можне знайти первісну від cos у степені!\nСпробуйте ще раз за табличними значеннями.";
+            return "РџСЂРѕРіСЂР°РјРјР° РЅРµ РјРѕР¶РЅРµ Р·РЅР°Р№С‚Рё РїРµСЂРІС–СЃРЅСѓ РІС–Рґ cos Сѓ СЃС‚РµРїРµРЅС–!\nРЎРїСЂРѕР±СѓР№С‚Рµ С‰Рµ СЂР°Р· Р·Р° С‚Р°Р±Р»РёС‡РЅРёРјРё Р·РЅР°С‡РµРЅРЅСЏРјРё.";
         if (isNum && !isDivX) {
             for (int i = fx_str.find_first_of('s') + 1; fx_str[i] != 'x'; i++)
                 buffer.push_back(fx_str[i]);
@@ -133,7 +133,7 @@ namespace std {
         }
 
         if (fx_str.find('^') != string::npos)
-            return "Программа не можне знайти первісну від cos у степені!\nСпробуйте ще раз за табличними значеннями.";
+            return "РџСЂРѕРіСЂР°РјРјР° РЅРµ РјРѕР¶РЅРµ Р·РЅР°Р№С‚Рё РїРµСЂРІС–СЃРЅСѓ РІС–Рґ cos Сѓ СЃС‚РµРїРµРЅС–!\nРЎРїСЂРѕР±СѓР№С‚Рµ С‰Рµ СЂР°Р· Р·Р° С‚Р°Р±Р»РёС‡РЅРёРјРё Р·РЅР°С‡РµРЅРЅСЏРјРё.";
         if (isNum && !isDivX) {
             for (int i = fx_str.find_first_of('n') + 1; fx_str[i] != 'x'; i++)
                 buffer.push_back(fx_str[i]);
@@ -158,8 +158,8 @@ namespace std {
     }
 
     void fx::input_fx(void) {
-        SetConsoleOutputCP(1251);
-        cout << "Введіть функцію f(x): ";
+        SetConsoleOutputCP(CP_UTF8);
+        cout << "Р’РІРµРґС–С‚СЊ С„СѓРЅРєС†С–СЋ f(x): ";
         cin >> fx_str;
     }
 
@@ -181,6 +181,6 @@ namespace std {
             fx_str.append("^1");
             return xPow();
         } else
-            return "Сталася помилка при підрахунку первісної!";
+            return "РЎС‚Р°Р»Р°СЃСЏ РїРѕРјРёР»РєР° РїСЂРё РїС–РґСЂР°С…СѓРЅРєСѓ РїРµСЂРІС–СЃРЅРѕС—!";
     }
 }
