@@ -1,11 +1,10 @@
 #include <iostream>
-#include <windows.h>
 #include "fx.h"
 
 using namespace std;
 
 int main() {
-    SetConsoleOutputCP(1251);
+    system("chcp 1251");
     cout << "Студента першого курсу"
          << "\nГрупи ІР-11"
          << "\nШевченко Дениса"
