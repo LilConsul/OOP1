@@ -6,7 +6,7 @@ using namespace std;
 
 int main() {
     SetConsoleOutputCP(CP_UTF8);
-    cout << "Студента першого курсу"
+    cout << "Студента першого курсу11"
          << "\nГрупи ІР-11"
          << "\nШевченко Дениса"
          << "\nВаріант №18(В)\n\n";
