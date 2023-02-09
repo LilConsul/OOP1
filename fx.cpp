@@ -147,7 +147,7 @@ namespace std {
         return p_Check(buffer);
     }
 
-    fx::fx(void) : x(new int(0)), n(new int(0)), isX(0), isDivX(0), fx_str(""), buffer("") {}
+    fx::fx(void) : x(new int(0)), n(new int(0)), fx_str(""), buffer("") {}
 
     fx::~fx(void) {
         //cout << "Destructed!\n";
